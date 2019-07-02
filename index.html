@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d8f165f6b.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>kalkulator bmi</h1>
+        </header>
+        <main>
+            <span class="tittle">Czym jest BMI?</span>
+            <p class="about-bmi">
+                Jest to wskaźnik, który ma za zadanie określić czy Twoja waga jest prawidłowa, czy też nie. <strong>Nie
+                    należy traktować BMI jako wskaźnik rozstrzygający</strong>. Wiele wysportowanych osób wg wskaźnika
+                BMI ma nadwagę czy wręcz otyłość, tymczasem dysponują po prostu znaczną masą mięśniową.
+            </p>
+            <div class="app-body">
+
+                <div class="gender-cont"><span>Płeć:</span>
+                    <select name="gender">
+                        <option value="k">Kobieta</option>
+                        <option value="m">Mężczyzna</option>
+                    </select></div>
+
+                <div class="inputs"><input placeholder="Waga(kg)" id="weight" type="text"> <input
+                        placeholder="Wzrost(cm)" id="height" type="text"></div>
+
+
+                <button><i class="fas fa-weight"></i> oblicz</button>
+                <div class="result"><i class="fas fa-times-circle"></i>
+                    <p>Twój wynik to: <span class="resltNr">00.00</span></p>
+                    <div class="scale">
+                        <img src="img/waga.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Designed by: Aleksander Kruk
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(#e0e07b, #8BC34A);
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+
+main span.tittle,
+button {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid green;
+    background: rgb(73, 165, 73);
+    color: white;
+    font-weight: bolder;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 2px 2px green;
+}
+
+.about-bmi,
+.app-body {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 120px;
+    margin: 5px auto;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+div.result {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 80vw;
+}
+
+div.result p {
+    margin-top: 15px;
+}
+
+.resltNr {
+    font-weight: bolder;
+}
+
+.scale img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.fa-times-circle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 374px) and (orientation: portrait) {
+    .about-bmi {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    main span.tittle {
+        font-size: 25px;
+        width: 220px;
+    }
+
+    .about-bmi {
+        font-size: 30px;
+    }
+
+    select {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .gender-cont span {
+        font-size: 25px;
+    }
+
+    input {
+        height: 50px;
+        width: 150px;
+        margin: 10px auto;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    div.result p {
+        font-size: 30px;
+    }
+
+    .fa-times-circle {
+        font-size: 40px;
+    }
+
+    footer {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1023px) {
+    body {
+        background: url(img/background.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    div.wrapper {
+        background: rgba(255, 255, 255, 0.829);
+        width: 550px;
+        height: 700px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .about-bmi {
+        font-size: 20px;
+    }
+
+    select {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .gender-cont span {
+        font-size: 25px;
+    }
+
+    input {
+        height: 50px;
+        width: 150px;
+        margin: 20px auto;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    div.result p {
+        font-size: 30px;
+    }
+
+    .fa-times-circle {
+        font-size: 40px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1023px) and (orientation: portrait) {
+
+    div.wrapper {
+        height: 900px;
+        position: absolute;
+        top: 100px;
+        right: 30px;
+    }
+
+    main span.tittle {
+        width: 250px;
+    }
+
+    .about-bmi {
+        font-size: 25px;
+    }
+
+    select {
+        font-size: 28px;
+    }
+
+    .gender-cont span {
+        font-size: 28px;
+    }
+
+    input {
+        height: 50px;
+        width: 150px;
+        margin: 20px auto;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    div.result p {
+        font-size: 35px;
+    }
+
+    .fa-times-circle {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 1365px) {
+
+    div.wrapper {
+        height: 900px;
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+    }
+
+    main span.tittle {
+        font-size: 25px;
+        width: 250px;
+    }
+
+    .about-bmi {
+        font-size: 25px;
+    }
+
+    select {
+        font-size: 28px;
+    }
+
+    .gender-cont span {
+        font-size: 28px;
+    }
+
+    input {
+        height: 50px;
+        width: 150px;
+        margin: 20px auto;
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    div.result {
+        width: 600px;
+        left: -10%;
+
+    }
+
+    div.result p {
+        font-size: 35px;
+    }
+
+    .fa-times-circle {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    div.wrapper {
+        height: 700px;
+    }
+}
+
+/* dokończyć style dla ipada i lecieć dalej w stronę desktop */
